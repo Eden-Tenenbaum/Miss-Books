@@ -1,19 +1,16 @@
-button {
-    cursor: pointer;
-    background-color: var(--clr2bg);
-    margin: 0.5em;
-    border: 1px solid var(--clr2);
-    padding: 0.5em 0.8em;
-    border-radius: 4px;
-}
-
-button:hover {
+button,
+.btn {
     background-color: var(--clr2);
     color: white;
-    transition: 0.3s;
+    padding: 0.6em 1.2em;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-input:focus {
-    background-color: var(--clr1bg);
-    transition: background-color 1s;
+button:hover,
+.btn:hover {
+    background-color: #7A3ECC;
+    transition: background-color 0.3s ease;
 }

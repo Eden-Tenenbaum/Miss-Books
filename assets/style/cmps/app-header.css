@@ -1,22 +1,46 @@
 .app-header {
-    background-color: var(--clr1);
-    color: var(--clr1bg-light);
-    padding-block: .75em;
-
+    width: 100%;
+    height: 100px;
 }
 
-.app-header section:first-child {
+.app-header section {
+    max-width: 1200px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-inline: 2em;
 }
 
+
+.app-header {
+    background-color: var(--clr1);
+    color: white;
+    padding: 1.2em;
+    /* text-align: center; */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.app-header h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
 
 .app-header .app-nav {
-    display: flex;
-    gap: 15px;
+    gap: 1.5em;
 
-    >a {
-        cursor: pointer;
-    }
+}
+
+.app-header .app-nav a {
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.app-header .app-nav a:hover {
+    color: var(--gray1);
+    cursor: pointer;
+    text-decoration: underline;
 }

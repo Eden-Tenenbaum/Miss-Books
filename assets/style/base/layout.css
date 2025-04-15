@@ -1,5 +1,9 @@
-
-
 .container {
     padding-inline: 5vw;
+    max-width: 1200px;
+    margin-inline: auto;
+}
+
+section {
+    margin-block: 2em;
 }
